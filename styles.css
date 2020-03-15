@@ -7,6 +7,22 @@
     z-index: -2;
     }
 
+#rubyBox :hover{
+  background-color: red;
+}
+
+#jsBox :hover{
+  background-color: yellow;
+}
+
+#htmlBox :hover{
+  background-color: rgb(255, 153, 0);
+}
+
+#cssBox :hover{
+  background-color: rgb(0, 162, 255);
+}
+
 .img-profile {
     border-radius: 50%;
 }
