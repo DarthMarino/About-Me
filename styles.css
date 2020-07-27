@@ -1,143 +1,153 @@
 .has-bg-img {
-    background-image: url(images/heroBG.jpg);
-    background-size: 100%;
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-    }
+  background-image: url(images/heroBG.webp);
+  background-size: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
 
-#rubyBox :hover{
+#rubyBox :hover {
   background-color: red;
 }
 
-#jsBox :hover{
+#jsBox :hover {
   background-color: yellow;
 }
 
-#htmlBox :hover{
+#htmlBox :hover {
   background-color: rgb(255, 153, 0);
 }
 
-#cssBox :hover{
+#cssBox :hover {
   background-color: rgb(0, 162, 255);
 }
 
 .img-profile {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
-.fade-in{
-    animation:opac 1.2s
-}@keyframes opac{from{opacity:0} to{opacity:1}}
+.fade-in {
+  animation: opac 1.2s;
+}
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-.center{
-  margin : 0 auto;
-  text-align : center;
+.center {
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* Animation */
 
 @keyframes fadeInUp {
-    from {
-        transform: translate3d(0,40px,0)
-    }
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
 
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeInUp {
-    from {
-        transform: translate3d(0,40px,0)
-    }
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
 
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
 
 .animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: both
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
 }
 
 .fadeInUp {
-    opacity: 0;
-    animation-name: fadeInUp;
-    -webkit-animation-name: fadeInUp;
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
 }
 
 /* Hang Effect for images*/
 @-webkit-keyframes hvr-hang {
-    0% {
-      -webkit-transform: translateY(8px);
-      transform: translateY(8px);
-    }
-    50% {
-      -webkit-transform: translateY(4px);
-      transform: translateY(4px);
-    }
-    100% {
-      -webkit-transform: translateY(8px);
-      transform: translateY(8px);
-    }
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
   }
-  @keyframes hvr-hang {
-    0% {
-      -webkit-transform: translateY(8px);
-      transform: translateY(8px);
-    }
-    50% {
-      -webkit-transform: translateY(4px);
-      transform: translateY(4px);
-    }
-    100% {
-      -webkit-transform: translateY(8px);
-      transform: translateY(8px);
-    }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
   }
-  @-webkit-keyframes hvr-hang-sink {
-    100% {
-      -webkit-transform: translateY(8px);
-      transform: translateY(8px);
-    }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
   }
-  @keyframes hvr-hang-sink {
-    100% {
-      -webkit-transform: translateY(8px);
-      transform: translateY(8px);
-    }
+}
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
   }
-  .hvr-hang {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
   }
-  .hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
-    -webkit-animation-name: hvr-hang-sink, hvr-hang;
-    animation-name: hvr-hang-sink, hvr-hang;
-    -webkit-animation-duration: .3s, 1.5s;
-    animation-duration: .3s, 1.5s;
-    -webkit-animation-delay: 0s, .3s;
-    animation-delay: 0s, .3s;
-    -webkit-animation-timing-function: ease-out, ease-in-out;
-    animation-timing-function: ease-out, ease-in-out;
-    -webkit-animation-iteration-count: 1, infinite;
-    animation-iteration-count: 1, infinite;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-direction: normal, alternate;
-    animation-direction: normal, alternate;
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
   }
+}
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+.hvr-hang {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+}
+.hvr-hang:hover,
+.hvr-hang:focus,
+.hvr-hang:active {
+  -webkit-animation-name: hvr-hang-sink, hvr-hang;
+  animation-name: hvr-hang-sink, hvr-hang;
+  -webkit-animation-duration: 0.3s, 1.5s;
+  animation-duration: 0.3s, 1.5s;
+  -webkit-animation-delay: 0s, 0.3s;
+  animation-delay: 0s, 0.3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
 
-  /* Outline In Effect */
+/* Outline In Effect */
 .hvr-outline-in {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -147,7 +157,7 @@
 }
 .hvr-outline-in:before {
   pointer-events: none;
-  content: '';
+  content: "";
   position: absolute;
   border: #e1e1e1 solid 4px;
   top: -16px;
@@ -160,7 +170,9 @@
   -webkit-transition-property: top, right, bottom, left;
   transition-property: top, right, bottom, left;
 }
-.hvr-outline-in:hover:before, .hvr-outline-in:focus:before, .hvr-outline-in:active:before {
+.hvr-outline-in:hover:before,
+.hvr-outline-in:focus:before,
+.hvr-outline-in:active:before {
   top: -8px;
   right: -8px;
   bottom: -8px;
