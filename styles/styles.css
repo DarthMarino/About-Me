@@ -6,27 +6,21 @@
   height: 100%;
   z-index: -2;
 }
-
 #rubyBox :hover {
   background-color: red;
 }
-
 #jsBox :hover {
-  background-color: yellow;
+  background-color: #ff0;
 }
-
 #htmlBox :hover {
-  background-color: rgb(255, 153, 0);
+  background-color: #f90;
 }
-
 #cssBox :hover {
-  background-color: rgb(0, 162, 255);
+  background-color: #00a2ff;
 }
-
 .img-profile {
   border-radius: 50%;
 }
-
 .fade-in {
   animation: opac 1.2s;
 }
@@ -38,50 +32,35 @@
     opacity: 1;
   }
 }
-
-.center {
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* Animation */
-
 @keyframes fadeInUp {
   from {
     transform: translate3d(0, 40px, 0);
   }
-
   to {
     transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
-
 @-webkit-keyframes fadeInUp {
   from {
     transform: translate3d(0, 40px, 0);
   }
-
   to {
     transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
-
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: both;
 }
-
 .fadeInUp {
   opacity: 0;
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
 }
-
-/* Hang Effect for images*/
 @-webkit-keyframes hvr-hang {
   0% {
     -webkit-transform: translateY(8px);
@@ -128,9 +107,9 @@
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
 }
-.hvr-hang:hover,
+.hvr-hang:active,
 .hvr-hang:focus,
-.hvr-hang:active {
+.hvr-hang:hover {
   -webkit-animation-name: hvr-hang-sink, hvr-hang;
   animation-name: hvr-hang-sink, hvr-hang;
   -webkit-animation-duration: 0.3s, 1.5s;
@@ -146,13 +125,11 @@
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
 }
-
-/* Outline In Effect */
 .hvr-outline-in {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px transparent;
   position: relative;
 }
 .hvr-outline-in:before {
@@ -170,9 +147,9 @@
   -webkit-transition-property: top, right, bottom, left;
   transition-property: top, right, bottom, left;
 }
-.hvr-outline-in:hover:before,
+.hvr-outline-in:active:before,
 .hvr-outline-in:focus:before,
-.hvr-outline-in:active:before {
+.hvr-outline-in:hover:before {
   top: -8px;
   right: -8px;
   bottom: -8px;
